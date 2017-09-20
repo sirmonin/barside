@@ -1,31 +1,23 @@
 /* Variables */
-$vin-blue: #5bb7db;
-$vin-green: #60b044;
-$vin-red: #ff0000;
+$header-blue:#115EC7;
+$header-purple: #A159A1;
+
+$component-grey: #EFF2F6;
+$background-grey: #DCE1E7;
+$placeholder-grey: #D0D6DC;
+$border-grey: #D3D8E0;
+
+$btn-green: #00DEA9;
+$btn-green-border: #00C697;
+$btn-blue: #195EC5;
+$btn-blue-border: #154690;
 
 /* Styles */
-body {
-  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  line-height: 1.4em;
-  color: #4d4d4d;
-  min-width: 230px;
-  max-width: 550px;
-  margin: 0 auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  font-weight: 300;
-}
 
-td {
-	padding: 12px;
+/* Header */
+header{
+  height: 80px;
+  background-image: linear-gradient(-90deg, $header-purple 0%, $header-blue 100%);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  position: relative;
 }
-
-h2 {
-	color: $vin-blue;
-}
-
-.savings { color: $vin-green; }
-.loss { color: $vin-red; }
-input.small { width: 46px; }
-td.fuel-savings-label { width: 175px; }

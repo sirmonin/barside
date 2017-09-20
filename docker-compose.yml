@@ -1,0 +1,9 @@
+version: '2'
+services:
+  app:
+    image: registry.gitlab.com/sirmonin/barside:latest
+    ports:
+    - 3031:3001/tcp
+    labels:
+      io.rancher.container.pull_image: always
+      io.rancher.scheduler.affinity:host_label: type=stage
